@@ -50,43 +50,135 @@ contains "a set of library functions that allow client programs to pass
 queries to the PostgreSQL backend server and to receive the results of
 these queries." [^1]
 
-
-## Installation and Upgrade
-
-- [Installing Percona Distribution for PostgreSQL](installing.md)
-- [Minor Upgrade of Percona Distribution for PostgreSQL](minor-upgrade.md)
+## Introduction
 
 
-## Extensions
-
-[pg_stat_monitor](pg-stat-monitor.md)
+* [About Percona XtraBackup](intro.md)
 
 
-## Solutions
-
-* [High Availability in PostgreSQL with Patroni](solutions/high-availability.md)
-
-    * [Deploying high-availability on Debian and Ubuntu](solutions/ha-setup-apt.md)
-    * [Deploying high-availability on RHEL and CentOS](solutions/ha-setup-yum.md)
-    * [Testing the Patroni PostgreSQL Cluster](solutions/ha-test.md)
-
-* [Backup and disaster recovery with pgBackRest](solutions/backup-recovery.md)
-
-    * [Deploying backup and disaster recovery solution in Percona Distribution for PostgreSQL](solutions/dr-pgbackrest-setup.md)
+* [How *Percona XtraBackup* Works](how_xtrabackup_works.md)
 
 
-## Uninstall
-
-[Uninstalling Percona Distribution for PostgreSQL](uninstalling.md)
-
-## Release Notes
-
-[Release notes](release-notes.md)
+## Installation
 
 
-## Reference
+* [Installing *Percona XtraBackup* on *Debian* and *Ubuntu*](installation/apt_repo.md)
 
-[Licensing](licensing.md)
+
+* [Installing *Percona XtraBackup* on Red Hat Enterprise Linux and CentOS](installation/yum_repo.md)
+
+
+* [Installing *Percona XtraBackup* from a Binary Tarball](installation/binary-tarball.md)
+
+
+* [Compiling and Installing from Source Code](installation/compiling_xtrabackup.md)
+
+
+## Run in Docker
+
+
+* [Running Percona XtraBackup in a Docker container](installation/docker.md)
+
+
+## Prerequisites
+
+
+* [Connection and Privileges Needed](using_xtrabackup/privileges.md)
+
+
+* [Configuring xtrabackup](using_xtrabackup/configuring.md)
+
+
+## Backup Scenarios
+
+
+* [The Backup Cycle - Full Backups](backup_scenarios/full_backup.md)
+
+
+* [Incremental Backup](backup_scenarios/incremental_backup.md)
+
+
+* [Compressed Backup](backup_scenarios/compressed_backup.md)
+
+
+* [Encrypted Backup](backup_scenarios/encrypted_backup.md)
+
+
+## User’s Manual
+
+
+* [*Percona XtraBackup* User Manual](manual.md)
+
+
+## Advanced Features
+
+
+* [Throttling Backups](advanced/throttling_backups.md)
+
+
+* [Lockless binary log information](advanced/lockless_bin-log.md)
+
+
+* [Encrypted InnoDB Tablespace Backups](advanced/encrypted_innodb_tablespace_backups.md)
+
+
+* [`lock-ddl-per-table` Option Improvements](advanced/locks.md)
+
+
+## Tutorials, Recipes, How-tos
+
+
+* [Recipes for xtrabackup](how-tos.md#recipes-xbk)
+
+
+* [Recipes for innobackupex](how-tos.md#recipes-ibk)
+
+
+* [How-Tos](how-tos.md#howtos)
+
+
+* [Auxiliary Guides](how-tos.md#aux-guides)
+
+## References
+
+
+* [*Percona XtraBackup* 2.4 Release Notes](release-notes.md)
+
+
+* [The xtrabackup Option Reference](xtrabackup_bin/xbk_option_reference.md)
+
+
+* [The innobackupex Option Reference](innobackupex/innobackupex_option_reference.md)
+
+
+* [The xbcloud Binary](xbcloud/xbcloud.md)
+
+
+* [Exponential Backoff](xbcloud/xbcloud_exbackoff.md)
+
+
+* [The xbcrypt binary](xbcrypt/xbcrypt.md)
+
+
+* [The xbstream binary](xbstream/xbstream.md)
+
+
+* [Known issues and limitations](known_issues.md)
+
+
+* [Frequently Asked Questions](faq.md)
+
+
+* [Glossary](glossary.md)
+
+
+* [Index of files created by Percona XtraBackup](xtrabackup-files.md)
+
+
+* [Trademark Policy](trademark-policy.md)
+
+
+* [Version checking](version-check.md)
 
 
 [^1]: <https://www.postgresql.org/docs/14/libpq.html>
